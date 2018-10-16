@@ -10,8 +10,8 @@ import java.util.Scanner;
 /**
  * application pour aprendre a faire des operations avec deux nombres
  * @author Patrice Lamontagne
- * ver. 1.2     addition, soustration et multiplication
- */
+ * ver. 1.3     addition, soustration, multiplication et division
+     */
 public class Main {
 
     /**
@@ -27,6 +27,7 @@ public class Main {
         System.out.println("1 addition");
         System.out.println("2 soustration");
         System.out.println("3 multiplication");
+        System.out.println("4 division");
         choix = scan.nextInt();
             
         // demande les nombres via interface et clavier
@@ -42,8 +43,13 @@ public class Main {
         // si multiplication des deux nombres
         if (choix ==3) { resultat = nb1 * nb2;
         }
+        // si division des deux nombres
+        if (choix ==4) { resultat = nb1/nb2;
+        }
         // si soustration des deux nombres
         if (choix ==2 ){ resultat = nb1 - nb2;
+        
+        //afficher le resultat
         System.out.println("le resultat est " + resultat);
         }
     
